@@ -1,20 +1,22 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HeroSection from "./components/HeroSection";
+import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
+import Products from "./components/pages/Products";
+import SignUp from "./components/pages/SignUp";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Navbar />
-        <HeroSection />
-        {/* <Switch>
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/services" component={Services} />
           <Route path="/products" component={Products} />
           <Route path="/sign-up" component={SignUp} />
-        </Switch> */}
+        </Switch>
       </BrowserRouter>
     </>
   );
